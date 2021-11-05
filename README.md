@@ -1,6 +1,6 @@
 # Social-Care_Eye-Fatigue
 -Class : L1BC-
--Course : HCI-
+-Course : Human Computer Interaction (COMP6800001)- Final Project
 -Group : Social Care-
 -FP Name : Eye Fatigue-
 -Member : Arvin Yuwono (2502009721), and C. Alexander Tjiandra (2502019230)-
