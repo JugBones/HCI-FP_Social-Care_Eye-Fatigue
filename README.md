@@ -1,6 +1,6 @@
 # Eye Fatigue <br />
 Class Name: L1BC <br />
-Course : Human Computer Interaction (COMP6800001)- Final Project <br />
+Course : Human Computer Interaction (COMP6800001) - Final Project <br />
 Team : Social Care <br />
 Member : <br />
  Arvin Yuwono(2502009721)<br />
