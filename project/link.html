@@ -1,0 +1,147 @@
+<!--(Christopher Alexander)-->
+<html>
+    <head>
+        <title>Alarm Clock</title>
+        <link href="style.css" rel="stylesheet" type="text/css" /> 
+        <script nomodule src="https://unpkg.com/browser-es-module-loader/dist/babel-browser-build.js"></script>
+        <script nomodule src="https://unpkg.com/browser-es-module-loader"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+        <script src="link.js"></script>
+    </head>
+
+    <body>  
+
+      <!--Bootstrap  Navbar (Arvin)-->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Eye Fatigue</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item alarmNavbar">
+            <a class="nav-link" href="link.html" >Alarm</a>
+          </li>
+        </ul>
+      </div>      
+    </nav>
+
+<div class="container" x-data='loadAlarmConfig()' x-init='() =>  {statTimer();}'>
+  <div class="row mt-5" >
+    <div class="col">
+      <div class="col-md-12">
+         <div class="card bg-dark ">
+            <div class="card-body">
+                <h3 class="card-title text-white">
+                  <i class="fas fa-clock"></i>
+                  <span type="text" x-text="time.hour"></span>:
+                  <span type="text" x-text="time.minute"></span>:
+                  <span type="text" x-text="time.second"></span>
+                  <span type="text" x-text="time.a"></span>
+                 </h3>
+                                
+                  <a class="btn btn-light mt-2" @click="createAlarm() ">Create Alarm</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="card bg-light mt-3">
+                 <div class="card-body">
+                  <div class="row">
+                    <div class="col" x-show="create_alarm">
+                      <div class="row">
+                        <div class="col-md-12">
+                           <div class="row">
+                             <div class="col">
+                                                            <label for="">Title</label>
+                                                            <input placeholder="Type alarm title here" type="text" x-model="alarm.title" class="form-control">
+       </div>
+       <div class="w-100 mt-4"></div>
+        <div class="col">
+                                                            <label for="">Hour</label>
+                                                            <input type="number" x-model="alarm.hour" class="form-control">
+      </div>
+      <div class="col">
+                                                            <label for="">Minute</label>
+                                                            <input type="number" x-model="alarm.minute" class="form-control">
+     </div>
+     <div class="col">
+                                                            <label for="">AM/PM</label>
+                                                            <select class="form-control" name="" x-model="alarm.a" id="">
+                                                                <option value="AM">AM</option>
+                                                                <option value="PM">PM</option>
+                                                            </select>
+      </div>
+   </div>
+   <div class="row mt-4">
+    <div class="col-md-12">
+                                                            <button class="btn btn-dark" @click="saveAlarm();updateHomeAlarm();">
+                                                                <i class="fas fa-check"></i>
+                                                            </button>
+     </div>
+        </div>
+          <div x-show="is_alarm_error" class="row">
+             <div class="col">
+                                                            <span x-text="alarm_error" class="text text-danger">
+                
+                                                            </span>
+           </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div x-show="alarms.length > 0" class="row">
+                        <div class="col-md-12">
+                            <h2>Alarms</h2>
+                            <template x-for="item in alarms" :key="item">
+                                <div x-bind:class="getAlarmClass(item)">
+                                    <div class="card-body">
+                                        <h5 class="title">
+                                            <span x-text="item.title"></span> will
+                                            <span x-text="item.label"></span>
+                                        </h5>
+                                        <p class="h3 mt-2">
+                                            <i class="fas fa-bell mr-2"></i><span x-text="item.time_left"></span>
+                                        </p>
+                                        <hr>
+                                        <button x-show="item.active" @click="deactivateAlarm(item.index)" class="btn btn-danger">
+                                            Stop
+                                        </button>
+                                        <button x-show="!item.active" class="btn btn-success">
+                                            Stopped
+                                        </button>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+        </div>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.14.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<!--Bootstrap v4.6 JS Components (Arvin)-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</html>

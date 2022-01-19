@@ -1,0 +1,240 @@
+/* body (Christopher Alexander)*/
+body {
+  background-image: url(background/img-pano.jpeg); /*Arvin organized to background folder*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+        }
+
+/*(Arvin):code*
+(Christopher): Finding the image
+This is to be used for exclusive background for the login page*/
+.loginBg{
+  background-image: url(background/loginpagebg.jpeg);
+}
+
+
+/* Navbar 
+When mouse hover on Alarm section of Navbar, give gray color effect
+(Arvin) */
+
+.alarmNavbar:hover{
+  background-color: gray;
+}
+
+/* button (Christopher Alexander)*/
+.btn {
+    background-color:red;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    opacity: 0.6
+    }
+
+
+/* (Arvin)*/
+#notification-bar{
+  background-color: #4C4E52;
+  position: relative;
+  width: 40em;
+  border-radius: 1em;
+  margin-top: 30em;
+}
+
+.userProfile{
+  position: relative;
+  top: 10em;
+}
+.name{
+  position: relative;
+  font-weight: bold;
+  font-size:20px;
+}
+.weblogin{
+  width: 200px;
+}
+
+
+/* for calender (Christopher Alexander)*/
+.cont {
+  margin: 10em;
+  padding-right: 60px;
+  width: 100%;
+  height: 100vh;
+  color: #eee;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+.calendar {
+  width: 45rem;
+  height: 52rem;
+  background-color: #201f1f;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.month {
+  width: 100%;
+  height: 12rem;
+  background-color: #167e56;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #167e56;
+}
+
+    
+/* footer (Christopher Alexander)*/
+.container {
+  width:50%;
+  height:50%;
+  margin: auto;
+  margin-top: 30px; /*Arvin edited value*/
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.container .col1 {
+  height: 78px;
+  padding-left: 20px;
+  padding-top: 30px;
+  font-family: "Palatino Linotype";
+  font-size: 40px; /*Arvin edited value*/
+  /*(Arvin)*/
+  font-weight: bold;
+}
+
+.container .col2 {
+  height: 78px;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-family: "Palatino Linotype";
+  font-size: 30px; /*Arvin edited value*/
+  /*(Arvin)*/
+  font-weight: bold;
+}
+/*(Arvin)*/
+
+.container .colsched{ 
+font-size: 45px;
+font-weight: bold;
+color:white;
+text-align: center;
+}
+
+.nextTimer{
+ position: relative;
+ justify-content: center;
+ margin-top: 10em;
+}
+.container .img-cont {
+  /*(Christopher Alexander)*/
+  float:right;
+  padding-right: 55px;
+  padding-top: 30px;
+}
+
+
+
+/*(Arvin) */
+#loginBox{
+  position: relative;
+  margin-top: 5em;
+
+}
+.defaultForm{
+  background-color: white;
+}
+.google-login-container{
+  position: relative;
+  left: 10em;
+}
+
+
+
+
+
