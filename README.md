@@ -19,10 +19,10 @@ Other Information:<br />
 ----  Let's see our sketch here !!  ---- <br/>
 
 Coding Workload is marked with comments, however the area of task is as the following: <br/>
-index.html : (Shared) <br/>
-index.js : Christopher Alexander Tjiandra <br/>
-link.html : Christopher Alexander Tjiandra <br/>
-link.js : Christopher Alexander Tjiandra <br/>
-login.html : Arvin Yuwono <br/>
-login.js :  Arvin Yuwono <br/>
-style.css : (Shared) <br/>
+-index.html : (Shared) <br/>
+-index.js : Christopher Alexander Tjiandra <br/>
+-link.html : Christopher Alexander Tjiandra <br/>
+-link.js : Christopher Alexander Tjiandra <br/>
+-login.html : Arvin Yuwono <br/>
+-login.js :  Arvin Yuwono <br/>
+-style.css : (Shared) <br/>
