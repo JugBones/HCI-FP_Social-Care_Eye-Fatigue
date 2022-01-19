@@ -35,8 +35,8 @@ Coding Workload is marked with comments, however the area of task is as the foll
 src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" />
 <img align="left" alt="HTML" width="26px"
 src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png" />
-<img align="left" alt="CSS" width="30px" height="26px"
+<img align="left" alt="CSS" width="26px" height="26px"
 src="https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3-thumbnail.png" />
-<img align="left" alt="Javacsript" width="30px" height="26px"
+<img align="left" alt="Javacsript" width="35px" height="26px"
 src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" />
 
