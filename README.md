@@ -37,6 +37,6 @@ src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
 src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png" />
 <img align="left" alt="CSS" width="26px" height="26px"
 src="https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3-thumbnail.png" />
-<img align="left" alt="Javacsript" width="35px" height="26px"
-src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" />
+<img align="left" alt="Javacsript" width="26px" height="26px"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" />
 
