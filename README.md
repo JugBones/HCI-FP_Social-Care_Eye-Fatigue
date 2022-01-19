@@ -16,4 +16,13 @@ Features:<br />
 
 Other Information:<br />
 
-----  Let's see our sketch here !!  ----
+----  Let's see our sketch here !!  ---- <br/>
+
+Coding Workload is marked with comments, however the area of task is as the following: <br/>
+index.html : (Shared)
+index.js : Christopher Alexander Tjiandra
+link.html : Christopher Alexander Tjiandra
+link.js : Christopher Alexander Tjiandra
+login.html : Arvin Yuwono 
+login.js :  Arvin Yuwono
+style.css : (Shared)
