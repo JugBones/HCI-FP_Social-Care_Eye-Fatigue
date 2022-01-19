@@ -13,9 +13,9 @@ We make a project for many programmers to help them by reminding for doing their
 
 ### Features
 Features:<br />
- - Alarm Notification<br />
- - Calendar Agenda<br />
- - Google Login (Cloud Sync) <br />
+ - Alarm Notification ⏱<br />
+ - Calendar Agenda 📆<br />
+ - Google Login (Cloud Sync) 📲<br />
 
 Other Information:<br />
 
