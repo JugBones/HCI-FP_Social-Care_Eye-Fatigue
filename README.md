@@ -29,8 +29,8 @@ Coding Workload is marked with comments, however the area of task is as the foll
 -login.html : Arvin Yuwono -  HTML file which used for the login page <br/>
 -login.js   : Arvin Yuwono - JS File that contain functions to run the login page <br/>
 -style.css  : (Shared) -  CSS File for styling the code and link to index.html <br/>
--live link  : https://jugbones.github.io/HCI-FP_Social-Care_Eye-Fatigue/
--live link : https://socialcarewebsite.alexandertjiand.repl.co/ (Recommend using Google Chrome)
+-live link  : https://jugbones.github.io/HCI-FP_Social-Care_Eye-Fatigue/ <br/>
+-live link : https://socialcarewebsite.alexandertjiand.repl.co/ (Recommend using Google Chrome) <br/>
 
 ### Languages and Tools: 
 
