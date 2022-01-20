@@ -27,8 +27,9 @@ Coding Workload is marked with comments, however the area of task is as the foll
 -link.html  : Christopher Alexander Tjiandra -  HTML file which used for the Alarm Page <br/>
 -link.js    : Christopher Alexander Tjiandra -  JS File that contain functions as a program to run alarms <br/>
 -login.html : Arvin Yuwono -  HTML file which used for the login page <br/>
--login.js   :  Arvin Yuwono - JS File that contain functions to run the login page <br/>
+-login.js   : Arvin Yuwono - JS File that contain functions to run the login page <br/>
 -style.css  : (Shared) -  CSS File for styling the code and link to index.html <br/>
+-live link  : https://jugbones.github.io/HCI-FP_Social-Care_Eye-Fatigue/
 
 
 ### Languages and Tools: 
