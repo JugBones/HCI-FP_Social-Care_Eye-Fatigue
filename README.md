@@ -22,16 +22,17 @@ Other Information:<br />
 ----  Let's see our sketch here !!  ---- <br/>
 
 Coding Workload is marked with comments, however the area of task is as the following: <br/>
--index.html : (Shared) <br/>
--index.js   : Christopher Alexander Tjiandra <br/>
--link.html  : Christopher Alexander Tjiandra <br/>
--link.js    : Christopher Alexander Tjiandra <br/>
--login.html : Arvin Yuwono <br/>
--login.js   :  Arvin Yuwono <br/>
--style.css  : (Shared) <br/>
+-index.html : (Shared) - HTML file which used for the Home Page <br/>
+-index.js   : Christopher Alexander Tjiandra - JS File that contain functions as a program to run the calender <br/>
+-link.html  : Christopher Alexander Tjiandra -  HTML file which used for the Alarm Page <br/>
+-link.js    : Christopher Alexander Tjiandra -  JS File that contain functions as a program to run alarms <br/>
+-login.html : Arvin Yuwono -  HTML file which used for the login page <br/>
+-login.js   : Arvin Yuwono - JS File that contain functions to run the login page <br/>
+-style.css  : (Shared) -  CSS File for styling the code and link to index.html <br/>
+-live link  : https://jugbones.github.io/HCI-FP_Social-Care_Eye-Fatigue/
 
 
-### Languages and Tools:
+### Languages and Tools: 
 
 <img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
 <img align="left" alt="GitHub" width="26px" 

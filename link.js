@@ -1,4 +1,5 @@
 /* (Christopher Alexander)*/
+/* JS that contain functions as a program to run alarms that can be set according to the user's wishes and can be made more than 1 */
 var date = moment().local();
 const alarmSound = new Audio("ticktac.mp3");
 
